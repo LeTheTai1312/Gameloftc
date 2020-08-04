@@ -7,14 +7,14 @@
 class SceneManager
 {
 public:
-	int objectNum;
+	int objectNum, textureNum, cubeTextureNum;
 	Objects* objects;
 	Camera camera;
-	//ResourceManager RsMnger;
 	void loadObjects(char *l, ResourceManager RsMnger);
+	void draw(ResourceManager RsMnger);
+	void free();
 	SceneManager();
 	~SceneManager();
-	void draw(ResourceManager RsMnger);
 private:
 
 };

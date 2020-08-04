@@ -19,6 +19,9 @@
     <Filter Include="Resources\Shaders">
       <UniqueIdentifier>{2282dbff-09d2-4dc5-9e1d-e8b68f4514a1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources\file">
+      <UniqueIdentifier>{dbb4a377-edff-4b82-995a-8f220cf82800}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Shaders.cpp">
@@ -42,13 +45,13 @@
     <ClCompile Include="Camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SceneManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ResourceManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -98,43 +101,67 @@
       <Filter>Resources\Shaders</Filter>
     </None>
     <None Include="..\Readme.doc" />
-    <None Include="..\Resources\Models\Woman1.nfg">
-      <Filter>Resources</Filter>
-    </None>
-    <None Include="..\Resources\Models\Woman2.nfg">
-      <Filter>Resources</Filter>
-    </None>
     <None Include="..\Resources\Shaders\Women2.vs">
       <Filter>Resources\Shaders</Filter>
     </None>
     <None Include="..\Resources\Shaders\Women2.fs">
       <Filter>Resources\Shaders</Filter>
     </None>
-    <None Include="..\Resources\Models\witch.nfg">
-      <Filter>Resources</Filter>
+    <None Include="..\Resources\Shaders\CubeShaderFS.fs">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="..\Resources\Shaders\CubeShaderVS.vs">
+      <Filter>Resources\Shaders</Filter>
     </None>
     <None Include="..\Resources\Models\Terrain.nfg">
-      <Filter>Resources</Filter>
+      <Filter>Resources\file</Filter>
+    </None>
+    <None Include="..\Resources\Models\witch.nfg">
+      <Filter>Resources\file</Filter>
+    </None>
+    <None Include="..\Resources\Models\Woman1.nfg">
+      <Filter>Resources\file</Filter>
+    </None>
+    <None Include="..\Resources\Models\Woman2.nfg">
+      <Filter>Resources\file</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\Resources\Textures\Woman1.tga">
-      <Filter>Resources</Filter>
+    <Image Include="..\Resources\Textures\back.tga">
+      <Filter>Resources\file</Filter>
     </Image>
-    <Image Include="..\Resources\Textures\Woman2.tga">
-      <Filter>Resources</Filter>
+    <Image Include="..\Resources\Textures\bottom.tga">
+      <Filter>Resources\file</Filter>
     </Image>
-    <Image Include="..\Resources\Textures\Witch.tga">
-      <Filter>Resources</Filter>
+    <Image Include="..\Resources\Textures\front.tga">
+      <Filter>Resources\file</Filter>
     </Image>
-    <Image Include="..\Resources\Textures\Terrain_blendmap_1.tga">
-      <Filter>Resources</Filter>
+    <Image Include="..\Resources\Textures\left.tga">
+      <Filter>Resources\file</Filter>
     </Image>
-    <Image Include="..\Resources\Textures\Terrain_blendmap_2.tga">
-      <Filter>Resources</Filter>
+    <Image Include="..\Resources\Textures\right.tga">
+      <Filter>Resources\file</Filter>
+    </Image>
+    <Image Include="..\Resources\Textures\top.tga">
+      <Filter>Resources\file</Filter>
     </Image>
     <Image Include="..\Resources\Textures\Grass.tga">
-      <Filter>Resources</Filter>
+      <Filter>Resources\file</Filter>
+    </Image>
+    <Image Include="..\Resources\Textures\Terrain_blendmap_2.tga">
+      <Filter>Resources\file</Filter>
+    </Image>
+    <Image Include="..\Resources\Textures\Terrain_blendmap_1.tga">
+      <Filter>Resources\file</Filter>
+    </Image>
+    <Image Include="..\Resources\Textures\Witch.tga">
+      <Filter>Resources\file</Filter>
+    </Image>
+    <Image Include="..\Resources\Textures\Woman1.tga">
+      <Filter>Resources\file</Filter>
+    </Image>
+    <Image Include="..\Resources\Textures\Woman2.tga">
+      <Filter>Resources\file</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>

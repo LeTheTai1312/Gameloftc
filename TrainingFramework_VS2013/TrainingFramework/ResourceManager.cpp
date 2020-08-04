@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "ResourceManager.h"
+#include<stdio.h>
 
 using namespace std;
 
@@ -35,14 +36,32 @@ void ResourceManager::loadResource(char* l) {
 		tilingTD[TDTextureID] = tiling;
 	}
 	fscanf(file, "#Cube Textures: %d\n", &cubeTextureNum);
-	cube_Textures = new Texture[cubeTextureNum];
+	cube_Textures = new Texture[1];
+	// Generate a texture object
+	glGenTextures(1, &cube_Textures[0].cubeTextureID);
+	// Bind the texture object
+	glBindTexture(GL_TEXTURE_CUBE_MAP, cube_Textures[0].cubeTextureID);
 	for (int i = 0; i < cubeTextureNum; i++) {
 		fscanf(file, "ID %d\n", &cubeTextureID);
 		fscanf(file, "FILE %s\n", cubeTextureLink);
 		fscanf(file, "TILING %s\n", tiling);
-		cube_Textures[cubeTextureID].loadTexture(cubeTextureLink);
+		GLint width, height, bpp;
+		char* imageData = LoadTGA(cubeTextureLink, &width, &height, &bpp);
+		glTexImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_X + i, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, imageData);
+		glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+		glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+		glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+		glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+		cube_Textures[0].cubePixels.push_back(cubeTextureLink);
+		//cube_Textures[cubeTextureID].loadCubeTexture(cubeTextureLink);
+		//cube_Textures[cubeTextureID].loadTexture(cubeTextureLink);
 		tilingCube[cubeTextureID] = tiling;
 	}
+	vector<char*>::iterator i;
+	for (i = cube_Textures[0].cubePixels.begin(); i != cube_Textures[0].cubePixels.end(); i++) {
+		cout << *i << endl;
+	}
+	//cube_Textures[0].loadCubeTexture();
 
 	fscanf(file, "#Shaders: %d\n", &shaderNum);
 	shader = new Shaders[shaderNum];
@@ -56,4 +75,11 @@ void ResourceManager::loadResource(char* l) {
 		//cout << shader[shaderID].fs;
 	}
 	fclose(file);
+}
+
+void ResourceManager::free() {
+	delete[] models;
+	delete[] TD_Textures;
+	delete[] cube_Textures;
+	delete[] shader;
 }

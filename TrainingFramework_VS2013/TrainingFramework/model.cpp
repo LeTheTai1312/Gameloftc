@@ -15,8 +15,6 @@ model::~model()
 }
 
 void model::init(char* l) {
-
-
 	int i;
 	float posx, posy, posz, normx, normy, normz, bnx, bny, bnz, tgtx, tgty, tgtz, uvx, uvy;
 	FILE *file;
@@ -52,6 +50,11 @@ void model::init(char* l) {
 	//texture.loadTexture(m);
 
 	//return myShaders.Init(vs, fs);
+}
+
+void model::free() {
+	delete[] vertices;
+	delete[] indices;
 }
 
 

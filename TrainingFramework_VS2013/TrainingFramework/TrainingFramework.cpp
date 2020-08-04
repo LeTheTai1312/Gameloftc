@@ -20,8 +20,6 @@
 using namespace std;
 GLuint vboId, iboId, textureID, matrixID;
 Shaders myShaders;
-//model models;
-//model models2;
 Matran matrix;
 Texture texture;
 Objects objects;
@@ -37,37 +35,9 @@ int Init ( ESContext *esContext )
 	
 	rsm.loadResource("../Resources/Resource.txt");
 	scm.loadObjects("../Resources/Scene.txt", rsm);
-
-
-	//cout << scm.objects[0].shaders.fs;
-
-	
-	//models.init("../Resources/Models/Woman1.nfg");
-	//buffer object
-	
-	/*glGenBuffers(1, &scm.objects[0].models.vboId);
-	glBindBuffer(GL_ARRAY_BUFFER, scm.objects[0].models.vboId);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex)*(scm.objects[0].models.num_vertice), scm.objects[0].models.vertices, GL_STATIC_DRAW);
-	glBindBuffer(GL_ARRAY_BUFFER, 0);*/
-	
-	//glGenBuffers(1, &vboId);
-	//glBindBuffer(GL_ARRAY_BUFFER, vboId);
-	//glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex)*(models.num_vertice), models.vertices, GL_STATIC_DRAW);
-
-	/*glGenBuffers(1, &scm.objects[0].models.iboId);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, scm.objects[0].models.iboId);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(int)*scm.objects[0].models.num_indice, scm.objects[0].models.indices, GL_STATIC_DRAW);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);*/
-
-	//glGenBuffers(1, &iboId);
-	//glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, iboId);
-	//glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(int)*models.num_indice, models.indices, GL_STATIC_DRAW);
-
-	//texture.loadTexture("..\\Resources\\Textures\\Woman1.tga");
-	//glEnable(GL_DEPTH_TEST);
-	//creation of shaders and program
-	//myShaders.Init("../Resources/Shaders/TriangleShaderVS.vs", "../Resources/Shaders/TriangleShaderFS.fs");
-	//scm.objects[0].shaders.Init(scm.objects[0].shaders.vs, scm.objects[0].shaders.fs);
+	//cout << scm.objectNum << endl;
+	//cout << scm.objects[4].textureNum << endl;
+	//cout << scm.objects[4].cubeTexture[0] << endl;
 	return 0;
 
 }
@@ -141,13 +111,13 @@ void Update ( ESContext *esContext, float deltaTime )
 
 void Key ( ESContext *esContext, unsigned char key, bool bIsPressed)
 {
-	if (key == 0x68 && bIsPressed && !MoveF) MoveF = true;
-	if (key == 0x62 && bIsPressed && !MoveB) MoveB = true;
-	if (key == 0x4A && bIsPressed && !RotateL) RotateL = true;
-	if (key == 0x4C && bIsPressed && !RotateR) RotateR = true;
-	if (key == 0x4B && bIsPressed && !RotateD) RotateD = true;
-	if (key == 0x49 && bIsPressed && !RotateU) RotateU = true;
-	if (key == 0x25 && bIsPressed && !MoveL) MoveL = true;
+	if (key == 0x51 && bIsPressed && !MoveF) MoveF = true;
+	if (key == 0x45 && bIsPressed && !MoveB) MoveB = true;
+	if (key == 0x41 && bIsPressed && !RotateL) RotateL = true;
+	if (key == 0x44 && bIsPressed && !RotateR) RotateR = true;
+	if (key == 0x53 && bIsPressed && !RotateD) RotateD = true;
+	if (key == 0x57 && bIsPressed && !RotateU) RotateU = true;
+	if (key == VK_LEFT && bIsPressed && !MoveL) MoveL = true;
 	if (key == VK_RIGHT && bIsPressed && !MoveR) MoveR = true;
 	if (key == VK_UP && bIsPressed && !MoveU) MoveU = true;
 	if (key == VK_DOWN && bIsPressed && !MoveD) MoveD = true;
@@ -158,9 +128,10 @@ void CleanUp()
 {
 	glDeleteBuffers(1, &scm.objects[0].models.vboId);
 	glDeleteBuffers(1, &scm.objects[0].models.iboId);
-	//glDeleteBuffers(1, &vboId);
-	//glDeleteBuffers(1, &models.iboId);
-	//glDeleteBuffers(1, &models2.vboId); glDeleteBuffers(1, &models2.iboId);
+	for (int i = 0; i < scm.objectNum; i++) {
+		scm.objects[i].models.free();
+		rsm.free();
+	}
 }
 
 int _tmain(int argc, _TCHAR* argv[])

@@ -20,7 +20,7 @@ public:
 	void set_wvp(Matrix v);
 
 	void update_world(float s, float x, float y, float z, float tx, float ty, float tz);
-	int textureNum;
+	int textureNum, cubeTextureNum;
 	model models;
 	int *texture;
 	int *cubeTexture;

@@ -21,7 +21,10 @@ void Camera::movementL(float deltaTime) {
 	Vector3 deltamove;
 	deltamove = -xaxis*deltaTime*speed;
 	camera_pos += deltamove;
-	camera_target += deltamove;
+	//camera_target += deltamove;
+	zaxis = (camera_pos - camera_target).Normalize();
+	xaxis = (up.Cross(zaxis)).Normalize();
+	yaxis = (zaxis.Cross(xaxis)).Normalize();
 }
 
 void Camera::movementR(float deltaTime) {

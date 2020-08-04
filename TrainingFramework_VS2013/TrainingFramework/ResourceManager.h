@@ -4,6 +4,7 @@
 #include "Shaders.h"
 #include "model.h"
 #include <vector>
+#include<iostream>
 
 class ResourceManager
 {
@@ -22,6 +23,7 @@ public:
 	Shaders* shader;
 
 	void loadResource(char* l);
+	void free();
 
 	ResourceManager();
 	~ResourceManager();

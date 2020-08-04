@@ -18,13 +18,13 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -126,6 +126,8 @@
     <None Include="..\Resources\Models\witch.nfg" />
     <None Include="..\Resources\Models\Woman1.nfg" />
     <None Include="..\Resources\Models\Woman2.nfg" />
+    <None Include="..\Resources\Shaders\CubeShaderFS.fs" />
+    <None Include="..\Resources\Shaders\CubeShaderVS.vs" />
     <None Include="..\Resources\Shaders\TriangleShaderFS.fs" />
     <None Include="..\Resources\Shaders\TriangleShaderVS.vs" />
     <None Include="..\Readme.doc" />
@@ -139,9 +141,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\Resources\Textures\back.tga" />
+    <Image Include="..\Resources\Textures\bottom.tga" />
+    <Image Include="..\Resources\Textures\front.tga" />
     <Image Include="..\Resources\Textures\Grass.tga" />
+    <Image Include="..\Resources\Textures\left.tga" />
+    <Image Include="..\Resources\Textures\right.tga" />
     <Image Include="..\Resources\Textures\Terrain_blendmap_1.tga" />
     <Image Include="..\Resources\Textures\Terrain_blendmap_2.tga" />
+    <Image Include="..\Resources\Textures\top.tga" />
     <Image Include="..\Resources\Textures\Witch.tga" />
     <Image Include="..\Resources\Textures\Woman1.tga" />
     <Image Include="..\Resources\Textures\Woman2.tga" />

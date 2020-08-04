@@ -11,13 +11,13 @@ using namespace std;
 class model
 {
 public:
+	GLuint vboId, iboId;
+	Vertex* vertices;
+	int* indices;
 	float pos, normal, binormal, tangent, uv;
 	int n, nr, num_vertice, num_indice;
 	void init(char* l);
-	Vertex *vertices;
-	int *indices;
-
-	GLuint vboId, iboId;
+	void free();
 
 
 
