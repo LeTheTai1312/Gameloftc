@@ -27,6 +27,8 @@ int Shaders::Init(char * fileVertexShader, char * fileFragmentShader)
 	WVP = glGetUniformLocation(program, "u_mvpMatrix");
 	//glUniformMatrix4fv(WVP, 1, GL_FALSE, &matrix.wvpMatrix.m[0][0]);
 	return 0;
+
+
 }
 
 Shaders::~Shaders()
