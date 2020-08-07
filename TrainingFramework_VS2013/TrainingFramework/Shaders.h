@@ -12,6 +12,7 @@ public:
 	GLint uvAttribute;
 	//int iTextureLoc;
 	GLint WVP;
+	int* m_texture;
 	
 	int Init(char * fileVertexShader, char * fileFragmentShader);
 	~Shaders();

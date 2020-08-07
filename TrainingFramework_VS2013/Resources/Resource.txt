@@ -1,4 +1,4 @@
-#Models: 5
+#Models: 7
 ID 0
 FILE ../Resources/Models/Woman1.nfg
 ID 1
@@ -9,8 +9,12 @@ ID 3
 FILE ../Resources/Models/Terrain.nfg
 ID 4 
 FILE ../Resources/Models/SkyBox.nfg
+ID 5
+FILE ../Resources/Models/Teran_Command_Center.nfg
+ID 6
+FILE ../Resources/Models/Goliath.nfg
 
-#2D Textures: 7
+#2D Textures: 8
 ID 0
 FILE ../Resources/Textures/Woman1.tga
 TILING CLAMP
@@ -30,7 +34,10 @@ ID 5
 FILE ../Resources/Textures/Grass.tga
 TILING CLAMP
 ID 6
-FILE ../Resources/Textures/right.tga
+FILE ../Resources/Textures/Dirt.tga
+TILING CLAMP
+ID 7
+FILE ../Resources/Textures/Rock.tga
 TILING CLAMP
 
 #Cube Textures: 6
@@ -53,7 +60,7 @@ ID 5
 FILE ../Resources/Textures/front.tga
 TILING CLAMP
 
-#Shaders: 3
+#Shaders: 4
 ID 0
 VS ../Resources/Shaders/TriangleShaderVS.vs
 FS ../Resources/Shaders/TriangleShaderFS.fs
@@ -63,3 +70,6 @@ FS ../Resources/Shaders/Woman2.fs
 ID 2
 VS ../Resources/Shaders/CubeShaderVS.vs
 FS ../Resources/Shaders/CubeShaderFS.fs
+ID 3
+VS ../Resources/Shaders/MulTextureVS.vs
+FS ../Resources/Shaders/MulTextureFS.fs

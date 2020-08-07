@@ -57,10 +57,6 @@ void ResourceManager::loadResource(char* l) {
 		//cube_Textures[cubeTextureID].loadTexture(cubeTextureLink);
 		tilingCube[cubeTextureID] = tiling;
 	}
-	vector<char*>::iterator i;
-	for (i = cube_Textures[0].cubePixels.begin(); i != cube_Textures[0].cubePixels.end(); i++) {
-		cout << *i << endl;
-	}
 	//cube_Textures[0].loadCubeTexture();
 
 	fscanf(file, "#Shaders: %d\n", &shaderNum);

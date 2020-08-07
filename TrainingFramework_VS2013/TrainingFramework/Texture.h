@@ -22,12 +22,6 @@ public:
 		"../Resources/Textures/back.tga"
 	};*/
 	void loadTexture(char* l);
-	void loadCubeTexturePX(char* l);
-	void loadCubeTextureNX(char* l);
-	void loadCubeTexturePY(char* l);
-	void loadCubeTextureNY(char* l);
-	void loadCubeTexturePZ(char* l);
-	void loadCubeTextureNZ(char* l);
 	void loadCubeTexture();
 	void loadImageData(char* l, int i);
 	Texture();

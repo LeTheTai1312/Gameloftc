@@ -101,9 +101,6 @@
       <Filter>Resources\Shaders</Filter>
     </None>
     <None Include="..\Readme.doc" />
-    <None Include="..\Resources\Shaders\Women2.vs">
-      <Filter>Resources\Shaders</Filter>
-    </None>
     <None Include="..\Resources\Shaders\Women2.fs">
       <Filter>Resources\Shaders</Filter>
     </None>
@@ -124,6 +121,15 @@
     </None>
     <None Include="..\Resources\Models\Woman2.nfg">
       <Filter>Resources\file</Filter>
+    </None>
+    <None Include="..\Resources\Shaders\MulTextureFS.fs">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="..\Resources\Shaders\MulTextureVS.vs">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="..\Resources\Shaders\Women2.vs">
+      <Filter>Resources\Shaders</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

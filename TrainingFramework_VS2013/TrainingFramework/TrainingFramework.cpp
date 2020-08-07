@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "../Utilities/utilities.h" // if you use STL, please include this line AFTER all other include
+#include"../Include/Box2D/Box2D.h"
 #include "Vertex.h"
 #include "Shaders.h"
 #include "Globals.h"
@@ -38,6 +39,7 @@ int Init ( ESContext *esContext )
 	//cout << scm.objectNum << endl;
 	//cout << scm.objects[4].textureNum << endl;
 	//cout << scm.objects[4].cubeTexture[0] << endl;
+	cout << scm.objects[2].texture[0];
 	return 0;
 
 }
