@@ -1,2 +1,73 @@
-﻿Camera.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
-  TrainingFramework.vcxproj -> C:\Users\Admin\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\\BIN\TrainingFramework.exe
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  stdafx.cpp
+cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  Shaders.cpp
+  TrainingFramework.cpp
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Camera.h(22,65): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Texture.cpp
+  SceneManager.cpp
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Camera.h(22,65): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\SceneManager.cpp(15,9): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\SceneManager.cpp(16,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\SceneManager.cpp(19,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\SceneManager.cpp(20,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\SceneManager.cpp(23,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\SceneManager.cpp(27,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\SceneManager.cpp(31,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\SceneManager.cpp(35,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\SceneManager.cpp(39,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\SceneManager.cpp(43,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\SceneManager.cpp(44,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\SceneManager.cpp(45,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\SceneManager.cpp(48,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\SceneManager.cpp(13,6): warning C4101: 'ob': unreferenced local variable
+  ResourceManager.cpp
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\ResourceManager.cpp(21,9): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\ResourceManager.cpp(22,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\ResourceManager.cpp(25,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\ResourceManager.cpp(26,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\ResourceManager.cpp(29,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\ResourceManager.cpp(32,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\ResourceManager.cpp(33,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\ResourceManager.cpp(34,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\ResourceManager.cpp(38,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\ResourceManager.cpp(45,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\ResourceManager.cpp(46,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\ResourceManager.cpp(47,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\ResourceManager.cpp(62,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\ResourceManager.cpp(65,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\ResourceManager.cpp(66,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\ResourceManager.cpp(67,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Object.cpp
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Camera.h(22,65): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Object.cpp(28,22): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Object.cpp(29,22): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Object.cpp(30,22): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Object.cpp(44,21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Object.cpp(45,21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Object.cpp(46,21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Object.cpp(47,22): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Object.cpp(48,22): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Object.cpp(49,22): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  model.cpp
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\model.cpp(21,9): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\model.cpp(22,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\model.cpp(25,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\model.cpp(33,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\model.cpp(36,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Matran.cpp
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Matran.cpp(1): warning C4603: '_USE_MATH_DEFINES': macro is not defined or definition is different after precompiled header use
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Matran.cpp(1): message : Add macro to precompiled header instead of defining here
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Matran.cpp(2): message : use of precompiled header
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Matran.cpp(26,21): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Matran.cpp(27,21): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Matran.cpp(28,21): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Matran.cpp(36,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Matran.cpp(37,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Matran.cpp(38,24): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  Camera.cpp
+D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\TrainingFramework\Camera.h(22,65): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Generating Code...
+  LINK : D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\\BIN\TrainingFramework.exe not found or not built by the last incremental link; performing full link
+Camera.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  TrainingFramework.vcxproj -> D:\Documents\GitHub\Gameloftc\TrainingFramework_VS2013\\BIN\TrainingFramework.exe

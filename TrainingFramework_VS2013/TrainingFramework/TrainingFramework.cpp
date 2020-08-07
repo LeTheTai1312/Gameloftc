@@ -12,8 +12,8 @@
 #include "Object.h"
 #include "Matran.h"
 #include "Camera.h"
-#include "SceneManager.h"
 #include "ResourceManager.h"
+#include "SceneManager.h"
 #include <conio.h>
 #include <iostream>
 
